@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        color: #fff;
+    }
+    .box{
+       width: fit-content;
+       padding: 0 1em;
+       height: fit-content;
+       background: black;
+       display: flex;
+       flex-direction: column;
+    }
+    .screen{
+        background: transparent;
+        flex: 30%;
+        color: #fff;
+        font-size: 5em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-family: 'Courier New', Courier, monospace;
+        padding: .2em 0;
+        flex-direction: column;
+        height: fit-content;
+        
+    }
+    .btn{
+        background: black;
+        flex: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: .8em;
+        padding: 1em .4em;
+    }
+.btn div{
+    background: rgba(250,250,250,.2);
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    }
+
+    .btn .opt{
+        background: orange;
+    }
+   .btn .up{
+        background: rgba(250,250,250,.6);
+    }
+    .report{
+        color: #fff;
+    }
+    /* article,main{
+      color: red;
+      flex: 1;
+    } */
+</style>
+<body>
+    
+   <div class="box">
+
+     <div class="screen"> 
+        <!-- <article>m</article>
+        <main>u</main> -->
+     </div>
+
+     <div class="btn"> 
+
+        <div class="up ac">AC</div>
+        <div class="up">!</div>
+        <div class="up">%</div>
+        <div class="opt">/</div>
+        <div class="num">7</div>
+        <div class="num">8</div>
+        <div class="num">9</div>
+        <div title="Multiply" class="opt">*</div>
+        <div class="num">4</div>
+        <div class="num">5</div>
+        <div class="num">6</div>
+        <div title="Subtract" class="opt">-</div>
+        <div class="num">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div title="Addition" class="opt">+</div>
+        <div class="num">0</div>
+        <div>.</div>
+        <div title="Equal to" class="equal">=</div>
+
+     </div>
+
+   </div>
+
+   <div class="report"> </div>
+
+   <script src="calc.js">
+
+    
+   </script>
+</body>
+</html>
